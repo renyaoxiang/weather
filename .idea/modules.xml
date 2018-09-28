@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/weather.iml" filepath="$PROJECT_DIR$/weather.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/weather-cli/weather-cli.iml" filepath="$PROJECT_DIR$/.idea/modules/weather-cli/weather-cli.iml" group="weather-cli" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/weather-frontend/weather-frontend.iml" filepath="$PROJECT_DIR$/.idea/modules/weather-frontend/weather-frontend.iml" group="weather-frontend" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/weather-frontend/weather-frontend_main.iml" filepath="$PROJECT_DIR$/.idea/modules/weather-frontend/weather-frontend_main.iml" group="weather-frontend" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/weather-frontend/weather-frontend_test.iml" filepath="$PROJECT_DIR$/.idea/modules/weather-frontend/weather-frontend_test.iml" group="weather-frontend" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/weather-web/weather-web.iml" filepath="$PROJECT_DIR$/.idea/modules/weather-web/weather-web.iml" group="weather-web" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/weather-web/weather-web_main.iml" filepath="$PROJECT_DIR$/.idea/modules/weather-web/weather-web_main.iml" group="weather-web" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/weather-web/weather-web_test.iml" filepath="$PROJECT_DIR$/.idea/modules/weather-web/weather-web_test.iml" group="weather-web" />
+    </modules>
+  </component>
+</project>
