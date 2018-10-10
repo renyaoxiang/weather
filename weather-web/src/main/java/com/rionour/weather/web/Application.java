@@ -1,6 +1,5 @@
 package com.rionour.weather.web;
 
-import com.google.common.collect.Lists;
 import com.rionour.weather.web.service.WeatherService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
@@ -8,13 +7,20 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 import org.springframework.scheduling.TaskScheduler;
+import org.springframework.scheduling.annotation.EnableAsync;
 import org.springframework.scheduling.annotation.EnableScheduling;
 import org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.io.UnsupportedEncodingException;
+
 @SpringBootApplication
 @EnableTransactionManagement
 @EnableScheduling
+@EnableAsync
 public class Application implements CommandLineRunner {
     @Bean
     public TaskScheduler taskScheduler() {
@@ -25,6 +31,7 @@ public class Application implements CommandLineRunner {
         scheduler.setThreadNamePrefix("spring-task-thread");
         return scheduler;
     }
+
     @Autowired
     WeatherService weatherService;
 
@@ -34,9 +41,7 @@ public class Application implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-        System.out.println("start");
-        weatherService.start();
-        System.out.println("finish");
-        weatherService.start(Lists.newArrayList("101110101"));
+
+//        weatherService.crawl();
     }
 }

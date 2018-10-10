@@ -5,29 +5,53 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class HourWeatherData {
 
+    /**
+     * 小时
+     */
     @JsonProperty("od21")
-    String hour;
+    String od21;
+    /**
+     * 温度
+     */
     @JsonProperty("od22")
     String od22;
+    /**
+     * unknow
+     */
     @JsonProperty("od23")
     String od23;
+    /**
+     * 风向
+     */
     @JsonProperty("od24")
     String od24;
+    /**
+     * 风力
+     */
     @JsonProperty("od25")
     String od25;
+    /**
+     * 降水
+     */
     @JsonProperty("od26")
     String od26;
+    /**
+     * 相对湿度
+     */
     @JsonProperty("od27")
     String od27;
+    /**
+     * 空气质量
+     */
     @JsonProperty("od28")
     String od28;
 
-    public String getHour() {
-        return hour;
+    public String getOd21() {
+        return od21;
     }
 
-    public void setHour(String hour) {
-        this.hour = hour;
+    public void setOd21(String od21) {
+        this.od21 = od21;
     }
 
     public String getOd22() {

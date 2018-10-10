@@ -4,7 +4,7 @@ buildscript {
         mavenCentral()
     }
     dependencies {
-        classpath 'com.rionour.plugin:gradle-frontend:4.0.0'
+        classpath 'com.rionour.plugin:gradle-frontend:6.0.0'
     }
 }
 
@@ -13,7 +13,7 @@ plugins {
     id 'maven-publish'
 }
 
-apply plugin: 'frontend-webjars'
+apply plugin: 'com.rionour.plugin.frontend'
 
 group 'com.rionour.weather'
 version '1.0.0'

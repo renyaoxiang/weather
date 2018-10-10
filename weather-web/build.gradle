@@ -7,16 +7,15 @@ buildscript {
         mavenCentral()
     }
     dependencies {
-        classpath "org.springframework.boot:spring-boot-gradle-plugin"
-        classpath "gradle.plugin.com.cinchapi.jarsh:jarsh:1.1.5"
+        classpath "org.springframework.boot:spring-boot-gradle-plugin:2.0.4.RELEASE"
     }
 }
 plugins {
     id 'java'
     id 'application'
     id 'maven-publish'
-    id 'org.springframework.boot' version '2.0.4.RELEASE'
 }
+apply plugin: 'org.springframework.boot'
 apply plugin: 'io.spring.dependency-management'
 group 'com.rionour.weather'
 version '1.0.0'
@@ -30,13 +29,10 @@ repositories {
 
 dependencies {
 
-    compile project(":weather-frontend")
+    compile group: 'com.rionour.weather', name: 'weather-frontend', version: '1.0.0'
 
     // https://mvnrepository.com/artifact/io.swagger.core.v3/swagger-core
     compile group: 'io.swagger.core.v3', name: 'swagger-core', version: '2.0.4'
-
-    // https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-data-jpa
-    compile group: 'org.springframework.boot', name: 'spring-boot-starter-data-jpa', version: '2.0.5.RELEASE'
 
     // https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-core
     compile group: 'com.fasterxml.jackson.core', name: 'jackson-core', version: '2.9.6'
@@ -54,23 +50,18 @@ dependencies {
 
     // https://mvnrepository.com/artifact/org.hsqldb/hsqldb
     compile group: 'org.hsqldb', name: 'hsqldb', version: '2.4.1'
-    compile 'org.springframework.boot:spring-boot-starter'
     // https://mvnrepository.com/artifact/javax.jms/jms
     compile group: 'javax.jms', name: 'jms', version: '1.1'
+    compile 'org.springframework.boot:spring-boot-starter'
     compile 'org.springframework.boot:spring-boot-starter-activemq'
     compile 'org.springframework.boot:spring-boot-starter-batch'
     compile 'org.springframework.boot:spring-boot-starter-webflux'
-    compile("org.springframework.boot:spring-boot-devtools")
-    // https://mvnrepository.com/artifact/com.github.docker-java/docker-java
-    compile group: 'com.github.docker-java', name: 'docker-java', version: '3.0.14'
+    compile "org.springframework.boot:spring-boot-devtools"
+    // https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-data-jpa
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-data-jpa', version: '2.0.5.RELEASE'
 
-    // https://mvnrepository.com/artifact/org.glassfish.hk2/hk2-api
-    compile group: 'org.glassfish.hk2', name: 'hk2-api', version: '2.5.0-b62'
-    // https://mvnrepository.com/artifact/org.glassfish.jersey.bundles.repackaged/jersey-guava
-    compile group: 'org.glassfish.jersey.bundles.repackaged', name: 'jersey-guava', version: '2.26-b03'
-
-    // https://mvnrepository.com/artifact/org.glassfish.jersey.inject/jersey-hk2
-    compile group: 'org.glassfish.jersey.inject', name: 'jersey-hk2', version: '2.26'
+    // https://mvnrepository.com/artifact/org.apache.commons/commons-lang3
+    compile group: 'org.apache.commons', name: 'commons-lang3', version: '3.8.1'
 
 }
 mainClassName = "com.rionour.weather.web.Application"
