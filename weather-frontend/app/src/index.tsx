@@ -4,10 +4,7 @@ import App from './App';
 import './index.css';
 // import registerServiceWorker from './registerServiceWorker';
 
-ReactDOM.render(
-  <App />,
-  document.getElementById('root') as HTMLElement
-);
+ReactDOM.render(<App />, document.getElementById('root'));
 // registerServiceWorker();
 
-console.log(process.env.NODE_ENV)
+console.log(process.env.NODE_ENV);

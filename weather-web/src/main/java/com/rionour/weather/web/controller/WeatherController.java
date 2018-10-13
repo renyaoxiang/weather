@@ -44,11 +44,6 @@ public class WeatherController {
 
     }
 
-    @ResponseBody
-    @RequestMapping("/cities")
-    public Iterable<WeatherStore> cities() {
-        return weatherStoreRepository.findAll();
-    }
 
     @ResponseBody
     @RequestMapping("/city/{code}/{day}")

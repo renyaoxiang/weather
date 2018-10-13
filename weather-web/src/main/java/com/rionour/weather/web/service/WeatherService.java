@@ -14,6 +14,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.scheduling.annotation.Async;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
+import org.springframework.transaction.annotation.Transactional;
 import org.springframework.util.StreamUtils;
 
 import javax.annotation.PostConstruct;
@@ -25,6 +26,7 @@ import java.nio.file.Files;
 import java.util.List;
 import java.util.Map;
 import java.util.Properties;
+import java.util.stream.Collectors;
 
 @Component
 public class WeatherService {
@@ -38,23 +40,29 @@ public class WeatherService {
     @Autowired
     WeatherStoreRepository weatherStoreRepository;
 
+    @Autowired
+    CrawlerCityRepository crawlerCityRepository;
+
     private Map<String, String> cityMap = Maps.newHashMap();
 
-    private List<String> codeList = Lists.newArrayList();
 
     public Map<String, String> getCityMap() {
         return cityMap;
     }
 
     public List<String> getCodeList() {
-        return codeList;
+        return crawlerCityRepository
+                .findAllByState(true)
+                .stream()
+                .map(it -> it.getCode())
+                .collect(Collectors.toList());
     }
 
 
     @Scheduled(cron = "0 0 1 * * *")
     @Async
     public void startSchedule() throws Exception {
-        this.crawl(codeList);
+        this.crawl(this.getCodeList());
     }
 
     @Scheduled(cron = "0 0 5 * * *")
@@ -80,17 +88,10 @@ public class WeatherService {
     @Async
     public void crawl() {
         try {
-            this.crawl(this.codeList);
+            this.crawl(this.getCodeList());
         } catch (Exception e) {
             e.printStackTrace();
         }
-    }
-
-    public static void main(String[] args) throws Exception {
-        InputStream content = (InputStream) new URL("http://www.baidu.com").openConnection().getContent();
-        String contentString = StreamUtils.copyToString(content, Charset.defaultCharset());
-        IOUtils.closeQuietly(content);
-        System.out.println(contentString);
     }
 
     @Async
@@ -115,6 +116,7 @@ public class WeatherService {
     }
 
     @PostConstruct
+    @Transactional
     public void init() {
 
 
@@ -124,10 +126,12 @@ public class WeatherService {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        for (String key : properties.stringPropertyNames()) {
-            String value = (String) properties.getProperty(key);
-            cityMap.put(key, value);
-            codeList.add(value);
+        for (String name : properties.stringPropertyNames()) {
+            String code = properties.getProperty(name);
+            CrawlerCity crawlerCity = crawlerCityRepository.findByCode(code);
+            if(crawlerCity == null){
+                crawlerCityRepository.save(new CrawlerCity(code,name));
+            }
         }
     }
 }
