@@ -2,30 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c53f465c-0e69-4f38-83aa-8d795177f85b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_freemarker_freemarker_2_3_28.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_freemarker_2_0_4_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_context_support_5_0_8_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather-web/src/main/resources/templates/index.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/weather-web/weather-web_main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/weather-web/weather-web_main.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/weather-web/weather-web_test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/weather-web/weather-web_test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/google-java-format.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weather-frontend/app/src/DayinfoPage.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weather-web/src/dist/config/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weather-web/src/main/java/com/rionour/weather/web/controller/DayinfoController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weather-web/src/main/java/com/rionour/weather/web/model/Dayinfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weather-web/src/main/java/com/rionour/weather/web/model/DayinfoCrawl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weather-web/src/main/java/com/rionour/weather/web/model/DayinfoCrawlRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weather-web/src/main/java/com/rionour/weather/web/model/DayinfoStore.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weather-web/src/main/java/com/rionour/weather/web/model/DayinfoStoreRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weather-web/src/main/java/com/rionour/weather/web/sbin/TestSbin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_commons_commons_lang3_3_8_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_commons_commons_lang3_3_8_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_checkerframework_checker_compat_qual_2_0_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_checkerframework_checker_compat_qual_2_0_0.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weather-frontend/app/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/weather-frontend/app/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weather-frontend/app/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/weather-frontend/app/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/weather-frontend/app/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/weather-frontend/app/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weather-frontend/app/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/weather-frontend/app/src/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/weather-web/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/weather-web/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weather-web/src/main/java/com/rionour/weather/web/config/WebFluxConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/weather-web/src/main/java/com/rionour/weather/web/config/WebFluxConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weather-web/src/main/java/com/rionour/weather/web/controller/CityController.java" beforeDir="false" afterPath="$PROJECT_DIR$/weather-web/src/main/java/com/rionour/weather/web/controller/CityController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weather-web/src/main/java/com/rionour/weather/web/controller/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/weather-web/src/main/java/com/rionour/weather/web/controller/HomeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weather-web/src/main/java/com/rionour/weather/web/controller/WeatherController.java" beforeDir="false" afterPath="$PROJECT_DIR$/weather-web/src/main/java/com/rionour/weather/web/controller/WeatherController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weather-web/src/main/java/com/rionour/weather/web/controller/WeatherSnapshotController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/weather-web/src/main/java/com/rionour/weather/web/model/CrawlerCity.java" beforeDir="false" afterPath="$PROJECT_DIR$/weather-web/src/main/java/com/rionour/weather/web/model/CrawlerCity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weather-web/src/main/java/com/rionour/weather/web/model/CrawlerCityRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/weather-web/src/main/java/com/rionour/weather/web/model/CrawlerCityRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/weather-web/src/main/java/com/rionour/weather/web/service/WeatherService.java" beforeDir="false" afterPath="$PROJECT_DIR$/weather-web/src/main/java/com/rionour/weather/web/service/WeatherService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weather-web/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/weather-web/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weather-web/src/main/resources/city.properties" beforeDir="false" afterPath="$PROJECT_DIR$/weather-web/src/main/resources/city.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weather-web/src/main/resources/public/error/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/weather-web/src/main/resources/public/error/404.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weather-web/src/main/java/com/rionour/weather/web/service/support/MyCrawler.java" beforeDir="false" afterPath="$PROJECT_DIR$/weather-web/src/main/java/com/rionour/weather/web/service/support/MyCrawler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weather-web/src/main/java/com/rionour/weather/web/service/support/MyWebCrawlerFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/weather-web/src/main/java/com/rionour/weather/web/service/support/MyWebCrawlerFactory.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -47,6 +41,7 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/weather$weather_weather_web__bootRun_.ic" NAME="weather:weather-web [bootRun] Coverage Results" MODIFIED="1539336777497" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/weather$weather_weather_web__createStartScripts_.ic" NAME="weather:weather-web [createStartScripts] Coverage Results" MODIFIED="1540388083282" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
@@ -88,7 +83,7 @@
                 <item name="weather" type="f1a62948:ProjectNode" />
                 <item name=":weather-web" type="2d1252cf:ModuleNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="distribution" type="c8890929:TasksNode$1" />
+                <item name="application" type="c8890929:TasksNode$1" />
               </path>
             </expand>
             <select />
@@ -101,46 +96,52 @@
     <session id="-1465870783">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="8" />
-          <entry key="project.open.time.1" value="3" />
+          <entry key="project.closed" value="15" />
+          <entry key="project.open.time.1" value="4" />
+          <entry key="project.open.time.10" value="1" />
+          <entry key="project.open.time.110" value="1" />
           <entry key="project.open.time.12" value="1" />
+          <entry key="project.open.time.18" value="1" />
           <entry key="project.open.time.28" value="1" />
-          <entry key="project.open.time.3" value="2" />
-          <entry key="project.open.time.4" value="1" />
+          <entry key="project.open.time.3" value="3" />
+          <entry key="project.open.time.4" value="3" />
           <entry key="project.open.time.41" value="2" />
           <entry key="project.open.time.54" value="1" />
           <entry key="project.open.time.58" value="2" />
-          <entry key="project.open.time.7" value="1" />
-          <entry key="project.opened" value="14" />
+          <entry key="project.open.time.7" value="2" />
+          <entry key="project.open.time.75" value="1" />
+          <entry key="project.opened" value="23" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="MF" value="1" />
-          <entry key="bat" value="1" />
+          <entry key="bat" value="2" />
           <entry key="class" value="14" />
           <entry key="gitignore" value="7" />
-          <entry key="gradle" value="16" />
+          <entry key="gradle" value="19" />
           <entry key="html" value="12" />
-          <entry key="java" value="181" />
+          <entry key="java" value="235" />
           <entry key="md" value="1" />
-          <entry key="properties" value="8" />
+          <entry key="properties" value="12" />
           <entry key="script" value="1" />
+          <entry key="testSbin" value="1" />
+          <entry key="tsx" value="5" />
           <entry key="txt" value="1" />
-          <entry key="weather-web" value="4" />
+          <entry key="weather-web" value="6" />
           <entry key="xml" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="14" />
-          <entry key="Groovy" value="16" />
+          <entry key="Groovy" value="19" />
           <entry key="HTML" value="12" />
-          <entry key="JAVA" value="181" />
+          <entry key="JAVA" value="235" />
           <entry key="Manifest" value="1" />
           <entry key="Markdown" value="1" />
-          <entry key="PLAIN_TEXT" value="14" />
-          <entry key="Properties" value="8" />
+          <entry key="PLAIN_TEXT" value="23" />
+          <entry key="Properties" value="12" />
           <entry key="XML" value="1" />
         </counts>
       </usages-collector>
@@ -148,21 +149,22 @@
         <counts>
           <entry key="dummy" value="1" />
           <entry key="gitignore" value="92" />
-          <entry key="gradle" value="1105" />
+          <entry key="gradle" value="1308" />
           <entry key="html" value="139" />
-          <entry key="java" value="4657" />
-          <entry key="properties" value="43" />
+          <entry key="java" value="5794" />
+          <entry key="properties" value="44" />
+          <entry key="tsx" value="117" />
           <entry key="txt" value="3" />
           <entry key="weather-web" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Groovy" value="1105" />
+          <entry key="Groovy" value="1308" />
           <entry key="HTML" value="139" />
-          <entry key="JAVA" value="4657" />
-          <entry key="PLAIN_TEXT" value="97" />
-          <entry key="Properties" value="43" />
+          <entry key="JAVA" value="5794" />
+          <entry key="PLAIN_TEXT" value="214" />
+          <entry key="Properties" value="44" />
         </counts>
       </usages-collector>
     </session>
@@ -170,94 +172,91 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/weather-web/src/main/java/com/rionour/weather/web/model/Weather.java">
+        <entry file="file://$PROJECT_DIR$/weather-web/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="14" column="7" selection-start-line="14" selection-start-column="7" selection-end-line="16" selection-end-column="57" />
+            <state relative-caret-position="1044">
+              <caret line="58" column="47" selection-start-line="58" selection-start-column="47" selection-end-line="59" selection-end-column="69" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/weather-web/src/main/java/com/rionour/weather/web/controller/HomeController.java">
+        <entry file="file://$PROJECT_DIR$/weather-web/src/main/java/com/rionour/weather/web/controller/CityController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="444">
-              <caret line="27" column="23" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
+            <state relative-caret-position="324">
+              <caret line="29" selection-start-line="29" selection-end-line="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/weather-web/src/main/java/com/rionour/weather/web/Application.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="396">
+              <caret line="37" column="12" selection-start-line="37" selection-start-column="12" selection-end-line="37" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/weather-web/src/main/java/com/rionour/weather/web/sbin/TestSbin.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="36">
+              <caret line="2" column="21" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="21" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#106#107#0" expanded="true" />
+                <element signature="e#145#146#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/weather-web/build.gradle">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/weather-web/src/main/java/com/rionour/weather/web/service/WeatherService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="307">
-              <caret line="67" column="30" selection-start-line="67" selection-start-column="30" selection-end-line="67" selection-end-column="30" />
+            <state relative-caret-position="486">
+              <caret line="53" column="31" selection-start-line="53" selection-start-column="31" selection-end-line="53" selection-end-column="31" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1677#1678#0" expanded="true" />
+                <element signature="e#1707#1708#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/weather-web/src/main/java/com/rionour/weather/web/model/CrawlerCityRepository.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="8" column="96" selection-start-line="8" selection-start-column="39" selection-end-line="8" selection-end-column="96" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/weather-frontend/app/src/App.tsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="18">
+              <caret line="1" column="19" selection-start-line="1" selection-start-column="19" selection-end-line="2" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/weather-frontend/app/src/DayinfoPage.tsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="648">
+              <caret line="36" column="9" selection-start-line="36" selection-start-column="9" selection-end-line="36" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/weather-web/src/main/java/com/rionour/weather/web/config/WebFluxConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="22" selection-start-line="22" selection-end-line="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/weather-web/src/main/resources/templates/index.ftl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/weather-frontend/app/public/index.html">
-          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="216">
-              <caret line="12" column="8" selection-end-line="41" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/weather-frontend/app/build/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="40" selection-end-column="560" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/weather-web/src/main/java/com/rionour/weather/web/controller/WeatherController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="39" column="3" selection-start-line="39" selection-start-column="3" selection-end-line="44" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/weather-web/src/main/resources/public/error/404.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+              <caret line="19" column="17" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -267,8 +266,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="HTML File" />
+        <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -292,9 +292,13 @@
       <find>Access-Control-Allow-Origin</find>
       <find>commons</find>
       <find>data2</find>
+      <find>observe24h_data</find>
+      <find>moment</find>
+      <find>weather</find>
     </findStrings>
     <replaceStrings>
       <replace />
+      <replace>dayinfo</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -447,6 +451,10 @@
                 <option name="name" value="check" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="generateScript2" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
                 <option name="description" value="Displays all dependencies declared in root project 'weather'." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="dependencies" />
@@ -548,6 +556,10 @@
                 <option name="description" value="Runs this project as a Spring Boot application." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="bootRun" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="generateScript" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Displays the insight into a specific dependency in root project 'weather'." />
@@ -944,6 +956,10 @@
                 <option name="name" value="bootRun" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/weather-web" />
+                <option name="name" value="generateScript" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
                 <option name="description" value="Compiles main Java source." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/weather-web" />
                 <option name="name" value="compileJava" />
@@ -972,6 +988,10 @@
                 <option name="description" value="Compiles test Java source." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/weather-web" />
                 <option name="name" value="compileTestJava" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/weather-web" />
+                <option name="name" value="generateScript2" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Displays all dependencies declared in project ':weather-web'." />
@@ -1041,14 +1061,14 @@
     <option name="modificationStamps">
       <map>
         <entry key="$USER_HOME$/.gradle/gradle.properties" value="1049568688" />
-        <entry key="$PROJECT_DIR$" value="10767720094000" />
+        <entry key="$PROJECT_DIR$" value="10771742778000" />
         <entry key="$PROJECT_DIR$/.gradle" value="0" />
         <entry key="$PROJECT_DIR$/build.gradle" value="0" />
         <entry key="$PROJECT_DIR$/settings.gradle" value="1843476194" />
         <entry key="$PROJECT_DIR$/weather-app/build.gradle" value="0" />
         <entry key="$PROJECT_DIR$/weather-cli/build.gradle" value="0" />
         <entry key="$PROJECT_DIR$/weather-frontend/build.gradle" value="3461564724" />
-        <entry key="$PROJECT_DIR$/weather-web/build.gradle" value="2557928218" />
+        <entry key="$PROJECT_DIR$/weather-web/build.gradle" value="4202765179" />
       </map>
     </option>
     <option name="projectBuildClasspath">
@@ -1286,16 +1306,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/settings.gradle" />
-        <option value="$PROJECT_DIR$/weather-frontend/.gitignore" />
-        <option value="$PROJECT_DIR$/weather-web/.gitignore" />
-        <option value="$PROJECT_DIR$/weather-web/src/main/java/com/rionour/weather/web/model/WeatherRepository.java" />
-        <option value="$PROJECT_DIR$/weather-web/src/main/java/com/rionour/weather/web/model/Weather.java" />
         <option value="$PROJECT_DIR$/weather-web/src/main/java/com/rionour/weather/web/model/WeatherCrawl.java" />
         <option value="$PROJECT_DIR$/weather-web/src/main/java/com/rionour/weather/web/model/WeatherStore.java" />
-        <option value="$PROJECT_DIR$/weather-web/src/main/java/com/rionour/weather/web/service/support/MyWebCrawlerFactory.java" />
         <option value="$PROJECT_DIR$/weather-web/src/main/java/com/rionour/weather/web/service/support/MyCrawlController.java" />
-        <option value="$PROJECT_DIR$/weather-web/src/main/java/com/rionour/weather/web/service/support/MyCrawler.java" />
         <option value="$PROJECT_DIR$/weather-web/src/main/java/com/rionour/weather/web/controller/WeatherShapshotController.java" />
         <option value="$PROJECT_DIR$/weather-web/src/main/java/com/rionour/weather/web/model/WeatherStoreRepository.java" />
         <option value="$PROJECT_DIR$/weather-web/src/main/java/com/rionour/weather/web/model/WeatherCrawlRepository.java" />
@@ -1314,8 +1327,6 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/weather-web/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/weather-web/src/main/resources/city.properties" />
-        <option value="$PROJECT_DIR$/weather-web/src/main/java/com/rionour/weather/web/service/WeatherService.java" />
-        <option value="$PROJECT_DIR$/weather-web/src/main/java/com/rionour/weather/web/controller/WeatherController.java" />
         <option value="$PROJECT_DIR$/weather-web/src/main/java/com/rionour/weather/web/controller/WeatherSnapshotController.java" />
         <option value="$PROJECT_DIR$/weather-web/src/main/java/com/rionour/weather/web/model/CrawlerCity.java" />
         <option value="$PROJECT_DIR$/weather-web/src/main/java/com/rionour/weather/web/controller/CityController.java" />
@@ -1323,17 +1334,37 @@
         <option value="$PROJECT_DIR$/weather-web/src/main/resources/templates/index.html" />
         <option value="$PROJECT_DIR$/weather-web/src/main/java/com/rionour/weather/web/config/WebFluxConfig.java" />
         <option value="$PROJECT_DIR$/weather-web/src/main/java/com/rionour/weather/web/controller/HomeController.java" />
-        <option value="$PROJECT_DIR$/weather-web/build.gradle" />
         <option value="$PROJECT_DIR$/weather-web/src/main/resources/templates/error/404.html" />
         <option value="$PROJECT_DIR$/weather-web/src/main/resources/public/error/404.html" />
+        <option value="$PROJECT_DIR$/weather-web/build/resources/main/application.properties" />
+        <option value="$PROJECT_DIR$/weather-web/src/main/java/com/rionour/weather/web/model/Sunrise.java" />
+        <option value="$PROJECT_DIR$/weather-web/src/main/java/com/rionour/weather/web/model/SunriseCrawl.java" />
+        <option value="$PROJECT_DIR$/weather-web/src/main/java/com/rionour/weather/web/model/SunriseStore.java" />
+        <option value="$PROJECT_DIR$/weather-web/src/main/java/com/rionour/weather/web/model/DayinfoCrawRepository.java" />
+        <option value="$PROJECT_DIR$/weather-web/src/main/java/com/rionour/weather/web/model/DayinfoCrawl.java" />
+        <option value="$PROJECT_DIR$/weather-web/src/main/java/com/rionour/weather/web/model/DayinfoStore.java" />
+        <option value="$PROJECT_DIR$/weather-web/src/main/java/com/rionour/weather/web/model/Dayinfo.java" />
+        <option value="$PROJECT_DIR$/weather-web/src/main/java/com/rionour/weather/web/service/support/MyWebCrawlerFactory.java" />
+        <option value="$PROJECT_DIR$/weather-web/src/main/java/com/rionour/weather/web/service/support/MyCrawler.java" />
+        <option value="$PROJECT_DIR$/weather-web/src/main/java/com/rionour/weather/web/controller/WeatherController.java" />
+        <option value="$PROJECT_DIR$/weather-web/src/main/java/com/rionour/weather/web/service/WeatherService.java" />
+        <option value="$PROJECT_DIR$/weather-web/src/main/java/com/rionour/weather/web/model/DayinfoStoreRepository.java" />
+        <option value="$PROJECT_DIR$/weather-web/src/main/java/com/rionour/weather/web/controller/DayinfoController.java" />
+        <option value="$PROJECT_DIR$/weather-frontend/app/src/WeatherPage.tsx" />
+        <option value="$PROJECT_DIR$/weather-frontend/app/src/App.tsx" />
+        <option value="$PROJECT_DIR$/weather-frontend/app/src/DayinfoPage.tsx" />
+        <option value="$PROJECT_DIR$/weather-web/src/main/java/com/rionour/weather/web/sbin/TestSbin.java" />
+        <option value="$PROJECT_DIR$/weather-web/src/dist/config/application.properties" />
+        <option value="$PROJECT_DIR$/weather-web/build/distributions/weather-web-1.0.0/config/application.properties" />
+        <option value="$PROJECT_DIR$/weather-web/build.gradle" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="279" />
-    <option name="y" value="36" />
-    <option name="width" value="1027" />
-    <option name="height" value="964" />
+    <option name="x" value="399" />
+    <option name="y" value="77" />
+    <option name="width" value="1025" />
+    <option name="height" value="928" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -1344,6 +1375,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -1355,26 +1388,6 @@
               <item name="weather" type="b2602c69:ProjectViewProjectNode" />
               <item name="weather" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="weather-frontend" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="weather" type="b2602c69:ProjectViewProjectNode" />
-              <item name="weather" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="weather-frontend" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="weather" type="b2602c69:ProjectViewProjectNode" />
-              <item name="weather" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="weather-frontend" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="build" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="weather" type="b2602c69:ProjectViewProjectNode" />
-              <item name="weather" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="weather-frontend" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="weather" type="b2602c69:ProjectViewProjectNode" />
@@ -1394,75 +1407,37 @@
               <item name="build" type="462c0819:PsiDirectoryNode" />
               <item name="distributions" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="weather" type="b2602c69:ProjectViewProjectNode" />
-              <item name="weather" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="weather-web" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="weather" type="b2602c69:ProjectViewProjectNode" />
-              <item name="weather" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="weather-web" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="weather" type="b2602c69:ProjectViewProjectNode" />
-              <item name="weather" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="weather-web" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="weather" type="b2602c69:ProjectViewProjectNode" />
-              <item name="weather" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="weather-web" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="weather" type="b2602c69:ProjectViewProjectNode" />
-              <item name="weather" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="weather-web" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539442467329" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540709520388" />
+    <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.5057881" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/weather-web/src/main/resources/public" />
-      <recent name="$PROJECT_DIR$/weather-web/src/main/resources/templates/error" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/weather-frontend/app/src" />
+      <recent name="$PROJECT_DIR$/weather-web/src/main/resources" />
+      <recent name="$PROJECT_DIR$/weather-web/src/main/resources/public/error" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/weather-web" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.rionour.weather.web.controller" />
       <recent name="com.rionour.weather.web.model" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/weather-web/src/main/resources" />
-      <recent name="$PROJECT_DIR$/weather-web/src/main/resources/public/error" />
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/weather-web" />
-      <recent name="$PROJECT_DIR$/weather-cli" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/weather-web/src/dist" />
+      <recent name="$PROJECT_DIR$/weather-web/src/main/resources/public" />
+      <recent name="$PROJECT_DIR$/weather-web/src/main/resources/templates/error" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -1477,25 +1452,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.weather:weather-web [bootDistTar]">
-    <configuration name="weather:weather-frontend [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/weather-frontend" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="clean" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Gradle.weather:weather-web [run]">
     <configuration name="weather:weather-frontend [frontendBuild]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -1526,24 +1483,6 @@
         <option name="taskNames">
           <list>
             <option value="publishToMavenLocal" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <method v="2" />
-    </configuration>
-    <configuration name="weather:weather-web [bootDistTar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/weather-web" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="bootDistTar" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -1604,22 +1543,58 @@
       </ExternalSystemSettings>
       <method v="2" />
     </configuration>
+    <configuration name="weather:weather-web [distTar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/weather-web" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="distTar" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <method v="2" />
+    </configuration>
+    <configuration name="weather:weather-web [run]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/weather-web" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="run" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Gradle.weather:weather-frontend [publishToMavenLocal]" />
       <item itemvalue="Gradle.weather:weather-web [bootRun]" />
-      <item itemvalue="Gradle.weather:weather-frontend [clean]" />
-      <item itemvalue="Gradle.weather:weather-web [clean]" />
+      <item itemvalue="Gradle.weather:weather-web [distTar]" />
       <item itemvalue="Gradle.weather:weather-web [build]" />
-      <item itemvalue="Gradle.weather:weather-web [bootDistTar]" />
+      <item itemvalue="Gradle.weather:weather-web [clean]" />
+      <item itemvalue="Gradle.weather:weather-web [run]" />
       <item itemvalue="Gradle.weather:weather-frontend [frontendBuild]" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.weather:weather-frontend [frontendBuild]" />
-        <item itemvalue="Gradle.weather:weather-web [bootDistTar]" />
+        <item itemvalue="Gradle.weather:weather-web [run]" />
         <item itemvalue="Gradle.weather:weather-web [build]" />
         <item itemvalue="Gradle.weather:weather-web [clean]" />
-        <item itemvalue="Gradle.weather:weather-frontend [clean]" />
+        <item itemvalue="Gradle.weather:weather-web [distTar]" />
       </list>
     </recent_temporary>
   </component>
@@ -1637,9 +1612,9 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="64" y="-11" width="1857" height="1092" extended-state="6" />
+    <frame x="65" y="-4" width="1855" height="1084" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25069174" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24460432" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -1647,23 +1622,24 @@
       <window_info id="UI Designer" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.21982759" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4997233" weight="0.28556034" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.4073276" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49529606" visible="true" weight="0.35668105" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39978448" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="sbt-shell-toolwindow" order="8" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.45689654" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5002767" side_tool="true" weight="0.44468313" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49529606" weight="0.42887932" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50470394" side_tool="true" visible="true" weight="0.35668105" />
       <window_info anchor="bottom" id="Build" order="11" weight="0.39870688" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.3297414" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.24958494" />
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="right" id="Gradle" order="5" visible="true" weight="0.2246818" />
+      <window_info anchor="right" id="Gradle" order="5" visible="true" weight="0.1793027" />
       <window_info anchor="right" id="Theme Preview" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="sbt" order="8" />
@@ -1687,317 +1663,24 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webflux/5.0.8.RELEASE/spring-webflux-5.0.8.RELEASE.jar!/org/springframework/web/reactive/config/EnableWebFlux.class">
+    <entry file="file://$PROJECT_DIR$/weather-web/src/main/java/com/rionour/weather/web/controller/HomeController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="17" column="21" lean-forward="true" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
+        <state relative-caret-position="270">
+          <caret line="27" column="23" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-autoconfigure/2.0.4.RELEASE/spring-boot-autoconfigure-2.0.4.RELEASE-sources.jar!/org/springframework/boot/autoconfigure/web/reactive/WebFluxProperties.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
-          <caret line="48" column="37" selection-start-line="48" selection-start-column="20" selection-end-line="48" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-autoconfigure/2.0.4.RELEASE/spring-boot-autoconfigure-2.0.4.RELEASE-sources.jar!/org/springframework/boot/autoconfigure/web/ResourceProperties.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="60" column="35" selection-start-line="60" selection-start-column="20" selection-end-line="60" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/weather-web/src/main/resources/public/error/5xx.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="7" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///opt/jdk1.8.0_171/src.zip!/java/lang/Thread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="747" selection-start-line="747" selection-end-line="747" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///opt/jdk1.8.0_171/src.zip!/java/util/concurrent/ThreadPoolExecutor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="1148" selection-start-line="1148" selection-end-line="1148" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///opt/jdk1.8.0_171/src.zip!/java/io/FilterInputStream.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="106" selection-start-line="106" selection-end-line="106" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///opt/jdk1.8.0_171/src.zip!/java/io/BufferedInputStream.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="169" selection-start-line="169" selection-end-line="169" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/weather-web/src/main/java/com/rionour/weather/web/share/model/WeatherData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="6" column="24" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/weather-web/src/main/java/com/rionour/weather/web/Application.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/weather-web/src/main/java/com/rionour/weather/web/model/WeatherStoreRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="12" column="54" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///opt/jdk1.8.0_171/src.zip!/java/net/URLStreamHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="51" column="38" selection-start-line="51" selection-start-column="22" selection-end-line="51" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///opt/jdk1.8.0_171/src.zip!/java/net/URL.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="1044" column="40" selection-start-line="1044" selection-start-column="40" selection-end-line="1044" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///opt/jdk1.8.0_171/src.zip!/java/net/URLConnection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="828" column="23" selection-start-line="828" selection-start-column="23" selection-end-line="828" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///opt/jdk1.8.0_171/src.zip!/java/net/HttpURLConnection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
-          <caret line="68" column="57" selection-start-line="68" selection-start-column="57" selection-end-line="68" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/5.0.8.RELEASE/spring-core-5.0.8.RELEASE-sources.jar!/org/springframework/core/io/ClassPathResource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="64" column="11" selection-start-line="64" selection-start-column="11" selection-end-line="64" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/edu.uci.ics/crawler4j/4.4.0/f9b55658564d4a54be1bb3aa8337a6173f72d1a2/crawler4j-4.4.0-sources.jar!/edu/uci/ics/crawler4j/crawler/CrawlController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-450">
-          <caret line="86" selection-start-line="86" selection-end-line="86" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-autoconfigure/2.0.4.RELEASE/spring-boot-autoconfigure-2.0.4.RELEASE-sources.jar!/org/springframework/boot/autoconfigure/web/reactive/WebFluxAutoConfiguration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="155" column="57" lean-forward="true" selection-start-line="155" selection-start-column="47" selection-end-line="155" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webflux/5.0.8.RELEASE/spring-webflux-5.0.8.RELEASE.jar!/org/springframework/web/reactive/config/ResourceHandlerRegistration.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-162">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webflux/5.0.8.RELEASE/spring-webflux-5.0.8.RELEASE.jar!/org/springframework/web/reactive/config/ResourceHandlerRegistry.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="137">
-          <caret line="30" column="30" selection-start-line="30" selection-start-column="30" selection-end-line="30" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/weather-web/src/main/resources/public/error/4xx.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="3" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/weather-cli/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/weather-web/src/main/java/com/rionour/weather/web/service/support/MyWebCrawlerFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="26" column="5" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/weather-web/src/main/java/com/rionour/weather/web/service/WeatherService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1908">
-          <caret line="134" column="9" selection-start-line="134" selection-start-column="9" selection-end-line="134" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/weather-web/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="16" column="17" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/weather-web/src/main/resources/city.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/weather-web/src/main/java/com/rionour/weather/web/controller/WeatherSnapshotController.java" />
-    <entry file="file://$PROJECT_DIR$/weather-web/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="6" selection-start-column="6" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-commons/2.0.9.RELEASE/spring-data-commons-2.0.9.RELEASE-sources.jar!/org/springframework/data/repository/CrudRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="108" column="18" selection-start-line="108" selection-start-column="9" selection-end-line="108" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.0.8.RELEASE/spring-web-5.0.8.RELEASE-sources.jar!/org/springframework/web/bind/annotation/RequestMapping.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="187" column="7" lean-forward="true" selection-start-line="187" selection-start-column="7" selection-end-line="187" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/weather-web/src/main/java/com/rionour/weather/web/model/CrawlerCity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="37" column="25" selection-start-line="37" selection-start-column="25" selection-end-line="37" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/weather-web/src/main/java/com/rionour/weather/web/service/support/MyCrawler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1368">
-          <caret line="97" column="41" selection-start-line="97" selection-start-column="32" selection-end-line="97" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/weather-web/src/main/java/com/rionour/weather/web/share/model/WeatherDataResponse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/weather-web/src/main/java/com/rionour/weather/web/share/model/HourWeatherData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="28" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="28" />
-          <folding>
-            <element signature="e#853#854#0" expanded="true" />
-            <element signature="e#880#881#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-commons/2.0.9.RELEASE/spring-data-commons-2.0.9.RELEASE-sources.jar!/org/springframework/data/repository/reactive/ReactiveSortingRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="35" column="42" selection-start-line="35" selection-start-column="17" selection-end-line="35" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webflux/5.0.8.RELEASE/spring-webflux-5.0.8.RELEASE.jar!/org/springframework/web/reactive/result/view/ViewResolutionResultHandler.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="194" column="11" lean-forward="true" selection-start-line="194" selection-start-column="11" selection-end-line="194" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/httpcomponents/httpcore/4.4.10/httpcore-4.4.10.jar!/org/apache/http/HttpStatus.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="21" column="28" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/weather-web/src/main/java/com/rionour/weather/web/controller/CityController.java">
+    <entry file="file://$PROJECT_DIR$/weather-web/build/resources/main/application.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
-          <caret line="32" column="16" selection-start-line="32" selection-start-column="16" selection-end-line="32" selection-end-column="16" />
+          <caret line="20" column="16" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/weather-web/src/main/java/com/rionour/weather/web/model/CrawlerCityRepository.java">
+    <entry file="file://$PROJECT_DIR$/weather-web/src/main/resources/templates/index.ftl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-commons/2.0.9.RELEASE/spring-data-commons-2.0.9.RELEASE-sources.jar!/org/springframework/data/repository/reactive/ReactiveCrudRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="32" column="12" selection-start-line="32" selection-start-column="12" selection-end-line="32" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/weather-web/src/main/java/com/rionour/weather/web/model/WeatherStore.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="11" column="38" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/weather-web/src/main/java/com/rionour/weather/web/model/Weather.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="14" column="7" selection-start-line="14" selection-start-column="7" selection-end-line="16" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/weather-web/src/main/java/com/rionour/weather/web/controller/WeatherController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="39" column="3" selection-start-line="39" selection-start-column="3" selection-end-line="44" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+        <state relative-caret-position="270">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -2015,30 +1698,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/weather-web/src/main/java/com/rionour/weather/web/config/WebFluxConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/weather-web/src/main/resources/templates/index.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/weather-web/src/main/java/com/rionour/weather/web/controller/HomeController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="444">
-          <caret line="27" column="23" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/weather-web/src/main/resources/public/error/404.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -2046,10 +1705,307 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/weather-web/src/main/java/com/rionour/weather/web/model/Weather.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="35" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/weather-web/src/main/java/com/rionour/weather/web/model/WeatherStore.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="11" column="38" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/weather-web/src/main/java/com/rionour/weather/web/model/WeatherCrawlRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="6" selection-start-line="6" selection-end-line="7" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-tx/5.0.8.RELEASE/spring-tx-5.0.8.RELEASE-sources.jar!/org/springframework/transaction/TransactionDefinition.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="139">
+          <caret line="74" column="28" selection-start-line="74" selection-start-column="8" selection-end-line="74" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/weather-web/src/main/java/com/rionour/weather/web/share/model/WeatherDataResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/weather-web/src/main/java/com/rionour/weather/web/share/model/WeatherData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="6" column="24" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/weather-web/src/main/java/com/rionour/weather/web/model/DayinfoStore.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" column="43" selection-start-line="10" selection-start-column="43" selection-end-line="10" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/weather-web/src/main/java/com/rionour/weather/web/model/DayinfoCrawl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" column="43" lean-forward="true" selection-start-line="10" selection-start-column="43" selection-end-line="10" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/weather-web/src/main/java/com/rionour/weather/web/model/DayinfoCrawlRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///opt/jdk1.8.0_171/src.zip!/java/nio/charset/Charset.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="890">
+          <caret line="526" column="26" selection-start-line="526" selection-start-column="26" selection-end-line="526" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/weather-web/src/main/java/com/rionour/weather/web/service/support/MyCrawler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1548">
+          <caret line="134" column="24" lean-forward="true" selection-start-line="134" selection-start-column="24" selection-end-line="134" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/weather-web/src/main/java/com/rionour/weather/web/service/support/MyWebCrawlerFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="13" column="27" lean-forward="true" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/weather-web/src/main/java/com/rionour/weather/web/model/WeatherCrawl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/weather-web/src/main/java/com/rionour/weather/web/controller/WeatherController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="26" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/weather-web/src/main/java/com/rionour/weather/web/share/model/HourWeatherData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="28" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/weather-web/src/main/java/com/rionour/weather/web/model/DayinfoStoreRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="12" column="51" selection-start-line="12" selection-start-column="51" selection-end-line="12" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/weather-web/src/main/java/com/rionour/weather/web/model/WeatherStoreRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="8" column="28" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/weather-web/src/main/java/com/rionour/weather/web/controller/DayinfoController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="25" column="56" selection-start-line="25" selection-start-column="56" selection-end-line="25" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/weather-frontend/app/src/WeatherPage.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="35" column="9" selection-start-line="35" selection-start-column="9" selection-end-line="35" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/weather-web/build/bootScripts/weather-web">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2458">
+          <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/weather-web/build/scripts/weather-web">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="51" column="17" selection-start-line="51" selection-start-column="17" selection-end-line="51" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/weather-web/build/scripts/testSbin" />
+    <entry file="file://$USER_HOME$/software/gradle/src/plugins/org/gradle/jvm/application/tasks/CreateStartScripts.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="105" column="32" selection-start-line="105" selection-start-column="19" selection-end-line="105" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/weather-web/build/distributions/weather-web-1.0.0/config/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/weather-web/build/distributions/weather-web-1.0.0/bin/testSbin.bat" />
+    <entry file="file://$USER_HOME$/software/gradle/src/plugins/org/gradle/api/tasks/application/CreateStartScripts.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="72" column="11" lean-forward="true" selection-start-line="72" selection-start-column="11" selection-end-line="72" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/software/gradle/src/plugins/org/gradle/api/plugins/ApplicationPluginConvention.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1656">
+          <caret line="127" column="15" selection-start-line="127" selection-start-column="15" selection-end-line="127" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/software/gradle/src/core-api/org/gradle/api/file/CopySpec.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1152">
+          <caret line="89" column="17" selection-start-line="89" selection-start-column="17" selection-end-line="89" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/weather-web/src/dist/config/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="44" selection-start-line="8" selection-start-column="44" selection-end-line="8" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/weather-cli/build.gradle">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/weather-frontend/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="127">
+          <caret line="23" selection-start-line="23" selection-end-line="29" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/weather-frontend/app/src/index.tsx">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/weather-frontend/app/src/axios.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/weather-web/src/main/java/com/rionour/weather/web/model/Dayinfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="31" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/weather-web/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="12" column="28" lean-forward="true" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/weather-web/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="67" column="30" selection-start-line="67" selection-start-column="30" selection-end-line="67" selection-end-column="30" />
+        <state relative-caret-position="1044">
+          <caret line="58" column="47" selection-start-line="58" selection-start-column="47" selection-end-line="59" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/weather-web/src/main/java/com/rionour/weather/web/controller/CityController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/weather-web/src/main/java/com/rionour/weather/web/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="37" column="12" selection-start-line="37" selection-start-column="12" selection-end-line="37" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/weather-web/src/main/java/com/rionour/weather/web/sbin/TestSbin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="21" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="21" />
+          <folding>
+            <element signature="e#106#107#0" expanded="true" />
+            <element signature="e#145#146#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/weather-web/src/main/java/com/rionour/weather/web/service/WeatherService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="53" column="31" selection-start-line="53" selection-start-column="31" selection-end-line="53" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1677#1678#0" expanded="true" />
+            <element signature="e#1707#1708#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/weather-web/src/main/java/com/rionour/weather/web/model/CrawlerCityRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="8" column="96" selection-start-line="8" selection-start-column="39" selection-end-line="8" selection-end-column="96" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/weather-frontend/app/src/App.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" column="19" selection-start-line="1" selection-start-column="19" selection-end-line="2" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/weather-frontend/app/src/DayinfoPage.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="648">
+          <caret line="36" column="9" selection-start-line="36" selection-start-column="9" selection-end-line="36" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/weather-web/src/main/java/com/rionour/weather/web/config/WebFluxConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="19" column="17" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
         </state>
       </provider>
     </entry>

@@ -43,6 +43,11 @@ public class WeatherService {
     @Autowired
     CrawlerCityRepository crawlerCityRepository;
 
+    @Autowired
+    DayinfoCrawlRepository dayinfoCrawlRepository;
+    @Autowired
+    DayinfoStoreRepository dayinfoStoreRepository;
+
     private Map<String, String> cityMap = Maps.newHashMap();
 
 
@@ -71,8 +76,15 @@ public class WeatherService {
         this.store();
     }
 
+
     @Async
     public void store() {
+        this.storeDayinfo();
+        this.storeWeather();
+
+    }
+
+    private void storeWeather() {
         Iterable<WeatherCrawl> weatherCrawls = weatherCrawlRepository.findAll();
         weatherCrawls.forEach(it -> {
             WeatherStore weatherStore = weatherStoreRepository.findByCodeAndDayAndHour(it.getCode(), it.getDay(), it.getHour());
@@ -83,6 +95,21 @@ public class WeatherService {
             }
         });
         weatherCrawlRepository.deleteAll(weatherCrawls);
+
+    }
+
+    private void storeDayinfo() {
+
+        Iterable<DayinfoCrawl> dayinfoCrawls = dayinfoCrawlRepository.findAll();
+        dayinfoCrawls.forEach(it -> {
+            DayinfoStore dayinfoStore = dayinfoStoreRepository.findByCodeAndDay(it.getCode(), it.getDay());
+            if (dayinfoStore == null) {
+                dayinfoStore = new DayinfoStore();
+                BeanUtils.copyProperties(it, dayinfoStore);
+                dayinfoStoreRepository.save(dayinfoStore);
+            }
+        });
+        dayinfoCrawlRepository.deleteAll();
     }
 
     @Async
@@ -110,7 +137,7 @@ public class WeatherService {
         RobotstxtServer robotstxtServer = new RobotstxtServer(robotstxtConfig, pageFetcher);
         CrawlController controller = new CrawlController(config, pageFetcher, robotstxtServer);
         codeList.stream().forEach(code -> {
-            controller.addSeed("http://www.weather.com.cn/weather/" + code + ".shtml");
+            controller.addSeed("http://www.weather.com.cn/weather1d/" + code + ".shtml");
         });
         controller.start(factory, numberOfCrawlers);
     }
@@ -129,8 +156,8 @@ public class WeatherService {
         for (String name : properties.stringPropertyNames()) {
             String code = properties.getProperty(name);
             CrawlerCity crawlerCity = crawlerCityRepository.findByCode(code);
-            if(crawlerCity == null){
-                crawlerCityRepository.save(new CrawlerCity(code,name));
+            if (crawlerCity == null) {
+                crawlerCityRepository.save(new CrawlerCity(code, name));
             }
         }
     }

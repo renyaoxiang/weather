@@ -45,7 +45,6 @@ dependencies {
     // https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-annotations
     compile group: 'com.fasterxml.jackson.core', name: 'jackson-annotations', version: '2.9.6'
 
-    compile group: 'org.hsqldb', name: 'hsqldb'
     testCompile group: 'junit', name: 'junit', version: '4.12'
 
     // https://mvnrepository.com/artifact/org.hsqldb/hsqldb
@@ -57,6 +56,7 @@ dependencies {
     compile 'org.springframework.boot:spring-boot-starter-batch'
     compile 'org.springframework.boot:spring-boot-starter-webflux'
     compile "org.springframework.boot:spring-boot-devtools"
+    compile group: 'org.hsqldb', name: 'hsqldb'
     compile "org.springframework.boot:spring-boot-starter-freemarker"
     // https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-data-jpa
     compile group: 'org.springframework.boot', name: 'spring-boot-starter-data-jpa', version: '2.0.5.RELEASE'
@@ -65,4 +65,26 @@ dependencies {
     compile group: 'org.apache.commons', name: 'commons-lang3', version: '3.8.1'
 
 }
-mainClassName = "com.rionour.weather.web.Application"
+jar {
+    enabled = true
+}
+task generateScript(type: CreateStartScripts) {
+    mainClassName = 'com.rionour.weather.web.sbin.TestSbin'
+    applicationName = 'testSbin'
+    outputDir = new File(project.buildDir, "/sbin")
+    classpath = jar.outputs.files + project.configurations.runtime
+}
+task generateScript2(type: CreateStartScripts) {
+    mainClassName = 'com.rionour.weather.web.sbin.TestSbin'
+    applicationName = 'testSbin2'
+    outputDir = new File(project.buildDir, "/sbin")
+    classpath = jar.outputs.files + project.configurations.runtime
+}
+
+applicationDistribution.from(generateScript) {
+    into "sbin"
+}
+applicationDistribution.from(generateScript2) {
+    into "sbin"
+}
+mainClassName = 'com.rionour.weather.web.Application'
