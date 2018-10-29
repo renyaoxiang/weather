@@ -8,6 +8,7 @@ import { instance } from './axios';
 const FormItem = Form.Item;
 
 interface IAppState {
+	temp?: boolean;
 	cities: string[];
 	city?: string;
 	day?: Moment;
@@ -61,7 +62,9 @@ class WeatherPage extends React.Component<any, IAppState> {
 
 	constructor(props: any) {
 		super(props);
+		const path: string = props.match.path || '';
 		this.state = {
+			temp: path.includes('temp'),
 			cities: [],
 			city: undefined,
 			day: undefined,
@@ -72,7 +75,6 @@ class WeatherPage extends React.Component<any, IAppState> {
 	public componentDidMount() {
 		instance.get('city/list').then(data => {
 			if (data.status === 200) {
-				console.log(data.data);
 				this.setState({
 					cities: data.data
 						.map((it: any) => {
@@ -133,15 +135,15 @@ class WeatherPage extends React.Component<any, IAppState> {
 	private handleSubmit = (e: React.FormEvent<any>) => {
 		e.preventDefault();
 		if (!this.state.city) {
-			message.error('请选择城市');
+			message.info('请选择城市');
 			return;
 		}
 		if (!this.state.day) {
-			message.error('请选择日期');
+			message.info('请选择日期');
 			return;
 		}
 		const day = this.state.day.format('YYYY-MM-DD');
-		instance.get(`weather/city/${this.state.city}/${day}`).then(
+		instance.get(`weather/city/${this.state.city}/${day}`, { params: { temp: this.state.temp } }).then(
 			data => {
 				if (data.status === 200) {
 					this.setState({

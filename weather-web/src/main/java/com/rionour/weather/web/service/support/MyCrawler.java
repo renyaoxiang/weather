@@ -1,6 +1,7 @@
 package com.rionour.weather.web.service.support;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.rionour.weather.web.model.CrawlerCityRepository;
 import com.rionour.weather.web.model.DayinfoCrawlRepository;
 import com.rionour.weather.web.model.DayinfoCrawl;
 import com.rionour.weather.web.model.WeatherCrawl;
@@ -37,14 +38,17 @@ public class MyCrawler extends WebCrawler {
 
     private WeatherCrawlRepository repository;
 
+    private CrawlerCityRepository crawlerCityRepository;
+
     private DayinfoCrawlRepository dayinfoCrawlRepository;
 
     private PlatformTransactionManager txManager;
 
-    public MyCrawler(WeatherCrawlRepository repository, DayinfoCrawlRepository dayinfoCrawlRepository, PlatformTransactionManager txManager) {
+    public MyCrawler(CrawlerCityRepository crawlerCityRepository, WeatherCrawlRepository repository, DayinfoCrawlRepository dayinfoCrawlRepository, PlatformTransactionManager txManager) {
         this.repository = repository;
         this.dayinfoCrawlRepository = dayinfoCrawlRepository;
         this.txManager = txManager;
+        this.crawlerCityRepository = crawlerCityRepository;
     }
 
     @Override
@@ -59,14 +63,11 @@ public class MyCrawler extends WebCrawler {
         HttpURLConnection connection = (HttpURLConnection) uri.toURL().openConnection();
         InputStream content = connection.getInputStream();
         String newString = IOUtils.toString(content, Charset.forName("utf8"));
-        System.out.println(findSunriseString(newString));
-        System.out.println(findSunsetString(newString));
         IOUtils.close(connection);
         Pattern pattern = Pattern.compile("weather/(.*)\\.shtml");
         Matcher matcher = pattern.matcher(url);
         if (matcher.find()) {
             String code = matcher.group(1);
-            System.out.println(code);
         } else {
             System.out.println("not found");
         }
@@ -78,6 +79,7 @@ public class MyCrawler extends WebCrawler {
         String code = this.parseCode(url);
         if (page.getParseData() instanceof HtmlParseData) {
             Context context = new Context();
+            context.setCode(code);
             HtmlParseData htmlParseData = (HtmlParseData) page.getParseData();
             String text = htmlParseData.getHtml();
             saveWeatherData(context, code, text);
@@ -138,6 +140,7 @@ public class MyCrawler extends WebCrawler {
 
     private void saveWeatherData(Context context, String code, String text) {
         String jsonString = findJsonString(text);
+
         WeatherDataResponse jsonNode = parseJsonString(jsonString);
         if (jsonNode != null && code != null) {
             resolveJsonData(context, jsonNode, code);
@@ -157,16 +160,18 @@ public class MyCrawler extends WebCrawler {
             model.setSunrise(sunriseString);
             model.setSunset(sunsetString);
             model.setDay(new Date());
+
             dayinfoCrawlRepository.save(model);
+            txManager.commit(status);
         } catch (Throwable e) {
             e.printStackTrace();
-            txManager.commit(status);
+            txManager.rollback(status);
         }
 
     }
 
     public String parseCode(String url) {
-        Pattern pattern = Pattern.compile("weather/(.*)\\.shtml");
+        Pattern pattern = Pattern.compile("weather1d/(.*)\\.shtml");
         Matcher matcher = pattern.matcher(url);
         if (matcher.find()) {
             String code = matcher.group(1);
@@ -199,6 +204,7 @@ public class MyCrawler extends WebCrawler {
     public void resolveJsonData(Context context, WeatherDataResponse jsonNode, String code) {
 
         List<HourWeatherData> hourWeatherDataList = jsonNode.getInner().getHoureDataList();
+        context.setCity(jsonNode.getInner().getCity());
         boolean isToday = true;
         for (HourWeatherData weatherData : hourWeatherDataList) {
 
@@ -208,6 +214,7 @@ public class MyCrawler extends WebCrawler {
             try {
                 WeatherCrawl model = new WeatherCrawl();
                 model.setCity(jsonNode.getInner().getCity());
+
                 model.setCode(code);
                 model.setHour(weatherData.getOd21());
                 model.setData1(weatherData.getOd21());

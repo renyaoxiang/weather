@@ -73,6 +73,7 @@ public class WeatherService {
     @Scheduled(cron = "0 0 5 * * *")
     @Async
     public void storeSchedule() throws Exception {
+
         this.store();
     }
 

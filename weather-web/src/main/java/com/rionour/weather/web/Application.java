@@ -36,12 +36,16 @@ public class Application implements CommandLineRunner {
     WeatherService weatherService;
 
     public static void main(String[] args) {
+
+
         SpringApplication.run(Application.class);
+
     }
 
     @Override
     public void run(String... args) throws Exception {
 
-//        weatherService.crawl();
+        weatherService.crawl();
+        weatherService.store();
     }
 }

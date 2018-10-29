@@ -68,23 +68,24 @@ dependencies {
 jar {
     enabled = true
 }
-task generateScript(type: CreateStartScripts) {
-    mainClassName = 'com.rionour.weather.web.sbin.TestSbin'
-    applicationName = 'testSbin'
-    outputDir = new File(project.buildDir, "/sbin")
-    classpath = jar.outputs.files + project.configurations.runtime
-}
-task generateScript2(type: CreateStartScripts) {
-    mainClassName = 'com.rionour.weather.web.sbin.TestSbin'
-    applicationName = 'testSbin2'
-    outputDir = new File(project.buildDir, "/sbin")
-    classpath = jar.outputs.files + project.configurations.runtime
-}
-
-applicationDistribution.from(generateScript) {
-    into "sbin"
-}
-applicationDistribution.from(generateScript2) {
-    into "sbin"
-}
+//
+//task generateScript(type: CreateStartScripts) {
+//    mainClassName = 'com.rionour.weather.web.sbin.TestSbin'
+//    applicationName = 'testSbin'
+//    outputDir = new File(project.buildDir, "/sbin")
+//    classpath = jar.outputs.files + project.configurations.runtime
+//}
+//task generateScript2(type: CreateStartScripts) {
+//    mainClassName = 'com.rionour.weather.web.sbin.TestSbin'
+//    applicationName = 'testSbin2'
+//    outputDir = new File(project.buildDir, "/sbin")
+//    classpath = jar.outputs.files + project.configurations.runtime
+//}
+//
+//applicationDistribution.from(generateScript) {
+//    into "sbin"
+//}
+//applicationDistribution.from(generateScript2) {
+//    into "sbin"
+//}
 mainClassName = 'com.rionour.weather.web.Application'

@@ -85,9 +85,34 @@ class CityPage extends React.Component<any, IAppState> {
 	public render() {
 		return (
 			<div className="App">
+				<div style={{ margin: '20px 50px', textAlign: 'left' }}>
+					<Button
+						onClick={() => {
+							instance.post('weather/crawl').then(data => {
+								message.success('已提交抓取请求，请耐心等待...');
+							});
+						}}
+					>
+						抓取数据
+					</Button>
+					<Button
+						style={{ marginLeft: '12px' }}
+						onClick={() => {
+							instance.post('weather/refresh').then(data => {
+								message.success('已提保存数据取请求，请耐心等待...');
+							});
+						}}
+					>
+						保存临时数据
+					</Button>
+					<p style={{ marginTop: '5px' }}>
+						系统每天晚上自动查询数据，此处主动执行抓取数据的功能，可以即使查看数据
+					</p>
+				</div>
 				<header>
 					<h1 className="App-title">查询城市添加</h1>
 				</header>
+
 				<Form layout="inline" onSubmit={this.handleSubmit}>
 					<Form.Item>
 						<Input
@@ -140,7 +165,7 @@ class CityPage extends React.Component<any, IAppState> {
 							return it.id !== id;
 						})
 					});
-					message.error('删除城市成功');
+					message.success('删除城市成功');
 				} else {
 					message.error('删除城市失败');
 				}
@@ -165,6 +190,7 @@ class CityPage extends React.Component<any, IAppState> {
 							})
 							.slice()
 					});
+					message.success('更新城市成功');
 				} else {
 					message.error('更新城市失败');
 				}
@@ -177,11 +203,11 @@ class CityPage extends React.Component<any, IAppState> {
 	private handleSubmit = (e: FormEvent) => {
 		e.preventDefault();
 		if (!this.state.cityCode || !this.state.cityName) {
-			message.error('城市名称和城市编码不能为空');
+			message.info('城市名称和城市编码不能为空');
 			return;
 		}
 		if (!/^\d+$/.test(this.state.cityCode)) {
-			message.error('城市编码必须为只包括数字的字符串');
+			message.info('城市编码必须为只包括数字的字符串');
 			return;
 		}
 		instance
@@ -197,7 +223,7 @@ class CityPage extends React.Component<any, IAppState> {
 							cityCode: '',
 							cityName: ''
 						});
-						message.success('添加成功');
+						message.success('添加城市成功');
 					} else {
 						message.error('添加城市失败');
 					}

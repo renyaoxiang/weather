@@ -9,6 +9,7 @@ import { instance } from './axios';
 const FormItem = Form.Item;
 
 interface IAppState {
+	temp: boolean;
 	cities: string[];
 	city?: string;
 	dayinfoDataList: any[];
@@ -39,7 +40,9 @@ class DayinfoPage extends React.Component<any, IAppState> {
 
 	constructor(props: any) {
 		super(props);
+		const path: string = props.match.path || '';
 		this.state = {
+			temp: path.includes('temp'),
 			cities: [],
 			city: undefined,
 			dayinfoDataList: []
@@ -49,7 +52,6 @@ class DayinfoPage extends React.Component<any, IAppState> {
 	public componentDidMount() {
 		instance.get('city/list').then(data => {
 			if (data.status === 200) {
-				console.log(data.data);
 				this.setState({
 					cities: data.data
 						.map((it: any) => {
@@ -97,10 +99,10 @@ class DayinfoPage extends React.Component<any, IAppState> {
 	private handleSubmit = (e: React.FormEvent<any>) => {
 		e.preventDefault();
 		if (!this.state.city) {
-			message.error('请选择城市');
+			message.info('请选择城市');
 			return;
 		}
-		instance.post(`dayinfo/city/${this.state.city}`).then(
+		instance.get(`dayinfo/city/${this.state.city}`, { params: { temp: this.state.temp } }).then(
 			data => {
 				if (data.status === 200) {
 					this.setState({

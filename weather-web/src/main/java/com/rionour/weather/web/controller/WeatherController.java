@@ -1,6 +1,7 @@
 package com.rionour.weather.web.controller;
 
 import com.google.common.collect.Lists;
+import com.rionour.weather.web.model.Weather;
 import com.rionour.weather.web.model.WeatherCrawl;
 import com.rionour.weather.web.model.WeatherCrawlRepository;
 import com.rionour.weather.web.model.WeatherStore;
@@ -16,8 +17,11 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import java.text.ParseException;
+import java.util.Date;
+import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ExecutorService;
+import java.util.stream.Collectors;
 
 @Controller
 @RequestMapping("/weather")
@@ -47,13 +51,25 @@ public class WeatherController {
 
     @ResponseBody
     @RequestMapping("/city/{code}/{day}")
-    public Iterable<WeatherStore> weather(@PathVariable("code") String code, @PathVariable("day") String day) {
+    public List<Weather> weather(@PathVariable("code") String code,
+                                 @PathVariable("day") String day,
+                                 @RequestParam(defaultValue = "false") boolean temp) {
         String cityCode = (String) weatherService.getCityMap().get(code);
         if (cityCode != null) {
             code = cityCode;
         }
         try {
-            return weatherStoreRepository.findByCodeAndDayOrderByHour(code, DateUtils.parseDate(day, "yyyy-MM-dd"));
+            Date date = DateUtils.parseDate(day, "yyyy-MM-dd");
+            if (temp) {
+                return weatherCrawlRepository.findByCodeAndDayOrderByHour(code, date).stream().map(it -> {
+                    return (Weather) it;
+                }).collect(Collectors.toList());
+            } else {
+                return weatherStoreRepository.findByCodeAndDayOrderByHour(code, date).stream().map(it -> {
+                    return (Weather) it;
+                }).collect(Collectors.toList());
+            }
+
         } catch (ParseException e) {
             return Lists.newArrayList();
         }

@@ -35,7 +35,6 @@ public class CityController {
 
     @RequestMapping("/remove")
     public void remove(@RequestBody CrawlerCity city) {
-        System.out.println("id is :" + city.getId());
         crawlerCityRepository.deleteById(city.getId());
     }
 

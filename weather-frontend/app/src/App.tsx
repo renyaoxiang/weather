@@ -36,14 +36,22 @@ class App extends React.Component<any, any> {
 										<Menu.Item key="weather">
 											<Link to="/weather">weather</Link>
 										</Menu.Item>
+										<Menu.Item key="dayinfo/temp">
+											<Link to="/dayinfo/temp">dayinfo/temp</Link>
+										</Menu.Item>
+										<Menu.Item key="weather/temp">
+											<Link to="/weather/temp">weather/temp</Link>
+										</Menu.Item>
 									</Menu>
 								);
 							}}
 						/>
 
 						<Route path="/" exact={true} render={() => <Redirect to="/weather" />} />
-						<Route path="/weather" component={WeatherPage} />
-						<Route path="/dayinfo" component={DayinfoPage} />
+						<Route path="/weather" exact={true} component={WeatherPage} />
+						<Route path="/dayinfo" exact={true} component={DayinfoPage} />
+						<Route path="/weather/temp" exact={true} component={WeatherPage} />
+						<Route path="/dayinfo/temp" exact={true} component={DayinfoPage} />
 						<Route path="/city" component={CityPage} />
 					</div>
 				</Router>
