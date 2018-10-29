@@ -25,7 +25,7 @@ public class HomeController {
 //                .header("Location", "index")
 //                .contentType(MediaType.TEXT_HTML)
 //                .build();
-        return "index";
+        return "index.html";
     }
 
 }
